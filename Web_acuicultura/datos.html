@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos del muestreo | GEI en Estanques de Cachama</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p class="marca">Gases de Efecto Invernadero en Estanques Piscícolas de Cachama</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="metodologia.html">Metodología</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <span class="eyebrow">Muestreo semanal</span>
+      <h1>Datos del muestreo</h1>
+      <p class="lead">
+        Estos son datos de ejemplo mientras se conecta el dataset real de las 196
+        muestras. La estructura ya está lista: cuando reemplaces <code>muestras.json</code>
+        con tus datos reales, esta página se actualiza sola.
+      </p>
+    </section>
+
+    <section style="border-top:none;">
+      <h2>Variables que se analizan</h2>
+      <div class="param-grid">
+        <div class="param"><span class="simb">CO₂</span><div class="nombre">Dióxido de carbono</div></div>
+        <div class="param"><span class="simb">CH₄</span><div class="nombre">Metano disuelto</div></div>
+        <div class="param"><span class="simb">pH</span><div class="nombre">Equilibrio del CO₂</div></div>
+        <div class="param"><span class="simb">°C</span><div class="nombre">Temperatura del agua</div></div>
+        <div class="param"><span class="simb">OD</span><div class="nombre">Oxígeno disuelto</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Muestras registradas</h2>
+      <p>Filtra por técnica de muestreo para comparar los registros.</p>
+
+      <div id="filtros">
+        <button data-tecnica="todas">Todas</button>
+        <button data-tecnica="multiparametro">Multiparámetro</button>
+        <button data-tecnica="headspace">Headspace</button>
+      </div>
+
+      <ul id="lista-muestras"></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Emisiones de GEI en estanques piscícolas de cachama — datos de campo, Orinoquía, Colombia</p>
+  </footer>
+
+  <button id="volver-arriba" aria-label="Volver arriba">↑</button>
+
+  <button id="chat-lanzador" aria-label="Abrir chat del proyecto">💬</button>
+  <div id="chat-panel" class="oculto">
+    <form id="form-chat">
+      <input type="text" id="input-pregunta" placeholder="Escribe tu pregunta..." required>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="respuesta-ia"></p>
+  </div>
+
+  <script src="interfaz.js"></script>
+  <script src="datos.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
